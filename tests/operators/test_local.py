@@ -1241,6 +1241,7 @@ def test_calculate_openlineage_events_completes_openlineage_errors(mock_processo
     assert instance.parse.called
     assert "Unable to parse OpenLineage events" in caplog.text
 
+
 @patch("cosmos.operators.local.DbtLocalBaseOperator._handle_post_execution")
 @patch("cosmos.operators.local.DbtLocalBaseOperator.handle_exception")
 @patch("cosmos.operators.local.DbtLocalArtifactProcessor")
